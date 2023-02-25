@@ -1,0 +1,27 @@
+<mat-toolbar class="toolbar" style="background-color: #FFBA5C;">
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="./assets/Gryffindor-Logo.png" height="55" />
+    </div>
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button class="navButton" mat-button routerLink="/">Home</button>
+        <button class="navButton" mat-button routerLink="/about">About Us</button>
+        <button class="navButton" mat-button routerLink="/contact">Contact Us</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!--section to hold the assignment # and message on page -->
+<br>
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card class="main-container" style="background-color: #740001; box-shadow: none;">
+      <br><br>
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

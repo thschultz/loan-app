@@ -1,0 +1,15 @@
+p,
+h3,
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
