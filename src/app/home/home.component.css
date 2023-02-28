@@ -2,3 +2,49 @@
   font-size: 24px;
   color: white;
 }
+
+
+input {
+  color: white;
+  background-color: #D3A625;
+}
+
+.formInput {
+  height: 40px !important;
+  padding-left: 10px;
+}
+
+.formField {
+  margin-left: -15px !important;
+  border-bottom: none !important;
+}
+
+.formField::after {
+  display: none !important;
+}
+
+mat-label {
+  color: white;
+}
+
+mat-card-title {
+  color: white;
+  font-size: 28px;
+}
+
+
+app-monthly-payment,
+app-interest-paid {
+  color: white;
+  font-size: 18px;
+}
+
+.submit {
+  background-color: #47525E;
+  color: white;
+  width: 280px;
+}
+
+.mat-mdc-text-field-wrapper .mdc-text-field .ng-tns-c112-0 .mdc-text-field--filled .mdc-text-field--no-label {
+  padding-left: 0px !important;
+}

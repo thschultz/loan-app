@@ -1,10 +1,48 @@
-<div fxLayout="row wrap">
-  <div fxFlex>
-    <mat-card-title class="title">Loan App</mat-card-title>
-    <br><br>
-    <mat-card-content>
-      <router-outlet></router-outlet>
-    </mat-card-content>
+<div style="width: 100%">
 
+
+
+  <div fxLayout="row wrap" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="32px 12px grid">
+
+    <div fxFlex class="calculator-form">
+      <mat-card-title class="title">Loan Application</mat-card-title>
+      <form fxLayout="column" width="120" [formGroup]="calculatorForm">
+        <mat-label>Loan Amount:</mat-label>
+        <mat-form-field fxFlex class="formField" appearance="fill">
+          <input class="formInput" type="text" name="txtLoanAmount" required id="txtLoanAmount" matInput
+            formControlName="loanAmount" />
+        </mat-form-field>
+
+        <mat-label>Interest Rate (ex: 3.3):</mat-label>
+        <mat-form-field class="formField" fxFlex appearance="fill" disableRipple="true">
+          <input class="formInput" type="text" name="txtInterestRate" required id="txtInterestRate" matInput
+            formControlName="interestRate" />
+        </mat-form-field>
+
+        <mat-label>Number of years:</mat-label>
+        <mat-form-field class="formField" fxFlex appearance="fill">
+          <input class="formInput" type="text" name="txtNumberOfYears" required id="txtNumberOfYears" matInput
+            formControlName="numberOfYears" />
+        </mat-form-field>
+
+        <button mat-raised-button class="submit" (click)="calculatePayment()">Submit</button>
+
+      </form>
+    </div>
+
+    <div fxFlex class="monthly-payment">
+
+      <mat-card class="mat-elevation-z0 text-center">
+        <mat-card-title>Your monthly payment:</mat-card-title>
+        <mat-card-content class="resultsContainer">
+          <app-monthly-payment [monthlyPaymentTotal]="monthlyPaymentTotal"></app-monthly-payment>
+        </mat-card-content>
+
+        <mat-card-title>Interest paid:</mat-card-title>
+        <mat-card-content class="resultsContainer">
+          <app-interest-paid [interestPaidTotal]="interestPaidTotal"></app-interest-paid>
+        </mat-card-content>
+      </mat-card>
+    </div>
   </div>
 </div>
