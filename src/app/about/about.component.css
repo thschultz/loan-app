@@ -1,7 +1,11 @@
 p,
 h3,
-p {
+mat-card-title {
   color: white;
+}
+
+mat-card-title {
+  font-size: 28px;
 }
 
 h2 {
@@ -12,4 +16,12 @@ h2 {
   text-align: center;
   color: white;
   font-size: 24px;
+}
+
+hr {
+  margin: 1rem 0;
+  color: white;
+  border: 0;
+  border-top: 2px solid;
+  opacity: 1;
 }

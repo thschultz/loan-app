@@ -35,12 +35,12 @@
       <mat-card class="mat-elevation-z0 text-center">
         <mat-card-title>Your monthly payment:</mat-card-title>
         <mat-card-content class="resultsContainer">
-          <app-monthly-payment [monthlyPaymentTotal]="monthlyPaymentTotal"></app-monthly-payment>
+          <app-monthly-payment class="results" [monthlyPaymentTotal]="monthlyPaymentTotal"></app-monthly-payment>
         </mat-card-content>
 
         <mat-card-title>Interest paid:</mat-card-title>
         <mat-card-content class="resultsContainer">
-          <app-interest-paid [interestPaidTotal]="interestPaidTotal"></app-interest-paid>
+          <app-interest-paid class="results" [interestPaidTotal]="interestPaidTotal"></app-interest-paid>
         </mat-card-content>
       </mat-card>
     </div>
