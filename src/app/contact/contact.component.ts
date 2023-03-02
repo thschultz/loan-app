@@ -1,3 +1,10 @@
+// WEB 425 Angular with TypeScript
+// Contributors
+
+// Contributors:
+// Richard Krasso
+// Thomas James Schultz
+
 import { Component } from '@angular/core';
 
 @Component({

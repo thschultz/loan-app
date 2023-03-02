@@ -1,3 +1,10 @@
+// WEB 425 Angular with TypeScript
+// Contributors
+
+// Contributors:
+// Richard Krasso
+// Thomas James Schultz
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';

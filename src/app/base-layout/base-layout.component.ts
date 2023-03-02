@@ -1,8 +1,14 @@
+// WEB 425 Angular with TypeScript
+// Contributors
+
+// Contributors:
+// Richard Krasso
+// Thomas James Schultz
+
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-import { InterestPaidComponent } from '../interest-paid/interest-paid.component';
-import { MonthlyPaymentComponent } from '../monthly-payment/monthly-payment.component';
+
 
 @Component({
   selector: 'app-base-layout',

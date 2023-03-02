@@ -1,9 +1,13 @@
+<!-- WEB 425 Angular with TypeScript
+Contributors
+
+Contributors:
+Richard Krasso
+Thomas James Schultz -->
+
 <div style="width: 100%">
-
-
-
   <div fxLayout="row wrap" fxLayout="row wrap" fxLayoutAlign="start start" fxLayoutGap="32px 12px grid">
-
+    <!-- Form for the interest calculator -->
     <div fxFlex class="calculator-form">
       <mat-card-title class="title">Loan Application</mat-card-title>
       <form fxLayout="column" width="120" [formGroup]="calculatorForm">
@@ -31,14 +35,14 @@
     </div>
 
     <div fxFlex class="monthly-payment">
-
+      <!-- Results container -->
       <mat-card class="mat-elevation-z0 text-center">
         <mat-card-title>Your monthly payment:</mat-card-title>
         <mat-card-content class="resultsContainer">
           <app-monthly-payment class="results" [monthlyPaymentTotal]="monthlyPaymentTotal"></app-monthly-payment>
         </mat-card-content>
 
-        <mat-card-title>Interest paid:</mat-card-title>
+        <mat-card-title>Interest Paid:</mat-card-title>
         <mat-card-content class="resultsContainer">
           <app-interest-paid class="results" [interestPaidTotal]="interestPaidTotal"></app-interest-paid>
         </mat-card-content>

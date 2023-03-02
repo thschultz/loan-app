@@ -1,3 +1,10 @@
+// WEB 425 Angular with TypeScript
+// Contributors
+
+// Contributors:
+// Richard Krasso
+// Thomas James Schultz
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -7,7 +14,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  // variables for form
   loanAmount: number = 0;
   interestRate: number = 0;
   numberOfYears: number = 0;
@@ -30,7 +37,7 @@ export class HomeComponent implements OnInit {
   }
 
   get form() { return this.calculatorForm.controls; }
-
+  // calculate payment function
   calculatePayment() {
 
     this.monthlyPayment = (this.form.loanAmount.value * (((this.form.interestRate.value / 100) / 12) * Math.pow((((this.form.interestRate.value / 100) / 12) + 1), (this.form.numberOfYears.value * 12))) / (Math.pow((1 + ((this.form.interestRate.value / 100) / 12)), (this.form.numberOfYears.value * 12)) - 1));
